@@ -1,18 +1,18 @@
 ---
 permalink: what-is-an-soa-record/
 node_id: 5138
-title: DNS SOA records
+title: What is an SOA record?
 type: article
 created_date: '2016-01-19'
 created_by: Rose Contreras
-last_modified_date: '2016-04-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-27'
+last_modified_by: Catherine Richardson
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-A Start of Authority (SOA) resource record indicates which domain name
-server (DNS) is the best source of information for the specified domain. Every
+A Start of Authority (SOA) resource record indicates which DNS name
+server is the best source of information for the specified domain. Every
 domain must have an SOA record.
 
 When you add a domain to DNS, the email address that you indicate is
@@ -26,8 +26,6 @@ domain is `hostmaster@rackspace.com`. You can see the SOA record for
 `rackspace.com` by running the following command:
 
     dig rackspace.com +nssearch
-
-**Note**: `dig` is used for Linux systems. If you have a Windows server, use [nslookup](/how-to/nslookup-checking-dns-records-on-windows) instead.
 
 The following information is returned:
 
